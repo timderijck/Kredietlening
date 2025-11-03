@@ -8,50 +8,50 @@ export const Footer = () => {
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          {/* Brand */}
-          <div className="text-left">
-            <h3 className="text-2xl font-bold mb-4">Kredietlening</h3>
-            <p className="text-primary-foreground/80 text-sm">
-              Snel en betrouwbaar geld lenen sinds 2005. Uw financiële partner in onverwachte situaties.
-            </p>
-          </div>
+            {/* Brand */}
+            <div className="md:text-left text-center">
+              <h3 className="text-2xl font-bold mb-4">Kredietlening</h3>
+              <p className="text-primary-foreground/80 text-sm">
+                Snel en betrouwbaar geld lenen sinds 2005. Uw financiële partner in onverwachte situaties.
+              </p>
+            </div>
 
-          {/* Products */}
-          <div className="text-center">
-            <h4 className="font-semibold mb-4">Producten</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link to="/minilening" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Minilening
-                </Link>
-              </li>
-              <li>
-                <Link to="/persoonlijke-lening" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Persoonlijke Lening
-                </Link>
-              </li>
-              <li>
-                <Link to="/doorlopend-krediet" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  Doorlopend Krediet
-                </Link>
-              </li>
-            </ul>
-          </div>
+            {/* Products */}
+            <div className="md:text-center text-center">
+              <h4 className="font-semibold mb-4">Producten</h4>
+              <ul className="flex flex-wrap justify-center gap-x-4 text-sm md:flex-col md:space-y-2">
+                <li>
+                  <Link to="/minilening" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Minilening
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/persoonlijke-lening" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Persoonlijke Lening
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/doorlopend-krediet" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                    Doorlopend Krediet
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          {/* Contact */}
-          <div className="text-right">
-            <h4 className="font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3 text-sm justify-end">
-              <li className="flex items-center gap-2 text-primary-foreground/80 justify-end">
-                <Phone size={16} />
-                <span>088 - 123 4567</span>
-              </li>
-              <li className="flex items-center gap-2 text-primary-foreground/80 justify-end">
-                <Mail size={16} />
-                <span>info@kredietlening.nl</span>
-              </li>
-            </ul>
-          </div>
+            {/* Contact */}
+            <div className="md:text-right text-center">
+              <h4 className="font-semibold mb-4">Contact</h4>
+              <ul className="flex flex-wrap justify-center gap-x-4 text-sm md:flex-col md:space-y-3 md:justify-end">
+                <li className="flex items-center gap-2 text-primary-foreground/80 justify-center md:justify-end">
+                  <Phone size={16} />
+                  <span>088 - 123 4567</span>
+                </li>
+                <li className="flex items-center gap-2 text-primary-foreground/80 justify-center md:justify-end">
+                  <Mail size={16} />
+                  <span>info@kredietlening.nl</span>
+                </li>
+              </ul>
+            </div>
         </div>
 
         <div className="pt-8 border-t border-primary-foreground/20">

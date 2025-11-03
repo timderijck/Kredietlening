@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 
+
 const usage = [
   {
     title: "Diner",
@@ -24,7 +25,7 @@ export const DCUsage = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Jij bepaalt waar je het aan uitgeeft</h2>
+            <h2 className="mb-4">Jij bepaalt waar je het aan uitgeeft</h2>
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {usage.map((item) => (

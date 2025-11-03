@@ -14,7 +14,7 @@ interface BreadcrumbNavProps {
 
 export const BreadcrumbNav = ({ pageTitle }: BreadcrumbNavProps) => {
   return (
-    <section className="sticky top-16 z-40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
+    <section className="sticky top-16 z-40 bg-background/95 border-b">
       <div className="container mx-auto px-4 py-3">
         <Breadcrumb>
           <BreadcrumbList>

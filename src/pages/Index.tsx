@@ -12,12 +12,10 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 const indexSchema = [
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Kredietlening",
-    "url": "https://finstart.nl",
+    "url": "https://kredietlening.nl",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://finstart.nl/search?q={search_term_string}",
+      "target": "https://kredietlening.nl/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   },
@@ -25,8 +23,7 @@ const indexSchema = [
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Kredietlening",
-    "url": "https://finstart.nl",
-    "logo": "https://finstart.nl/assets/logo.png", // Placeholder, pas dit aan naar de daadwerkelijke URL van je logo
+    "url": "https://kredietlening.nl",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+31-88-123-4567", // Telefoonnummer uit de footer
@@ -34,6 +31,14 @@ const indexSchema = [
       "email": "info@kredietlening.nl" // E-mailadres uit de footer
     }
   }
+];
+
+const ctaButtons = [
+  {
+    text: "Direct Aanvragen",
+    link: "/minilening-zonder-bkr-aanvragen",
+    variant: "cta" as const,
+  },
 ];
 
 const Index = () => {
@@ -50,9 +55,8 @@ const Index = () => {
       <Hero
         title="Geld nodig? Ontvang het binnen 24 uur"
         subtitle="€100 – €1.500 zonder BKR toetsing. Snel, simpel en betrouwbaar."
-        ctaLink="/minilening-zonder-bkr-aanvragen"
+        ctaButtons={ctaButtons}
         backgroundImage="/assets/adviseur.jpg"
-        moreInfoLink="/minilening-zonder-bkr-aanvragen#providers"
       />
 
       <TrustBadges />

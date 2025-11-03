@@ -22,8 +22,8 @@ export const CTASection = ({
         <div className="max-w-3xl mx-auto text-primary-foreground">
           <h2 className="mb-4 text-primary-foreground">{title}</h2>
           <p className="text-lg md:text-xl mb-8 text-primary-foreground/90">
-            {description}
-          </p>
+              {description}
+            </p>
           <Button variant="cta" size="lg" className="group" asChild>
             <Link to={buttonLink}>
               {buttonText}

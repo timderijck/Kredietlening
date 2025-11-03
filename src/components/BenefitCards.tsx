@@ -36,8 +36,8 @@ export const BenefitCards = ({ benefits = defaultBenefits }: BenefitCardsProps) 
         <div className="text-center mb-12">
           <h2 className="mb-4">Waarom Kredietlening?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Snel, simpel en betrouwbaar. Ontdek de voordelen van lenen bij Kredietlening.
-          </p>
+              Snel, simpel en betrouwbaar. Ontdek de voordelen van lenen bij Kredietlening.
+            </p>
         </div>
         
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">

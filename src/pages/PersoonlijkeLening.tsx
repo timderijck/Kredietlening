@@ -18,6 +18,7 @@ import { Euro, Calendar, Percent, Shield } from "lucide-react";
 import { OtherLoans } from "@/components/OtherLoans";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
+
 const persoonlijkeLeningSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialProduct",
@@ -83,6 +84,14 @@ const persoonlijkeLeningSFAQ = [
   },
 ];
 
+const ctaButtons = [
+  {
+    text: "Direct Aanvragen",
+    link: "/aanvragen",
+    variant: "cta" as const,
+  },
+];
+
 const PersoonlijkeLening = () => {
   return (
     <div className="min-h-screen">
@@ -98,54 +107,56 @@ const PersoonlijkeLening = () => {
         title="Persoonlijke lening: Realiseer je dromen"
         subtitle="Leen eenvoudig en snel tussen de €1.500 en €50.000. Lagere rente dan een minilening en flexibel inzetbaar voor grote aankopen of verbouwingen."
         backgroundImage="/assets/verbouwingen.jpg"
-        moreInfoLink="/minilening-zonder-bkr-aanvragen#providers"
+        ctaButtons={ctaButtons}
       />
 
-      <TrustBadges />
+        <TrustBadges />
 
-      <RecommendedProvider />
+        <RecommendedProvider />
 
-      <PersonalLoanKeyFeatures />
+        <PersonalLoanKeyFeatures />
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="mb-4">Over de persoonlijke lening</h2>
-              <p className="text-lg text-muted-foreground">
-              Een persoonlijke lening biedt de oplossing voor het financieren van persoonlijke doelen, zoals een droomreis, een nieuwe auto, boot, camper, caravan of een verbouwing. Je leent een vast bedrag tussen de €1.500 en €50.000, dat je volledig naar eigen inzicht kunt besteden.
-              </p>
+      
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                  <h2 className="mb-4">Over de persoonlijke lening</h2>
+                  <p className="text-lg text-muted-foreground">
+                  Een persoonlijke lening biedt de oplossing voor het financieren van persoonlijke doelen, zoals een droomreis, een nieuwe auto, boot, camper, caravan of een verbouwing. Je leent een vast bedrag tussen de €1.500 en €50.000, dat je volledig naar eigen inzicht kunt besteden.
+                  </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="mb-4">Lange looptijd, lage maandlasten</h2>
-              <p className="text-lg text-muted-foreground">
-              De looptijd van een persoonlijke lening kan oplopen tot 10 jaar, wat zorgt voor een beheersbaar vast maandbedrag. Bijvoorbeeld, voor een lening van €7.500 voor een nieuwe keuken betaal je maandelijks slechts €95. Bovendien kan de rente voor leningen ten behoeve van een verbouwing of onderhoud fiscaal aftrekbaar zijn!
-              </p>
+
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                  <h2 className="mb-4">Lange looptijd, lage maandlasten</h2>
+                  <p className="text-lg text-muted-foreground">
+                  De looptijd van een persoonlijke lening kan oplopen tot 10 jaar, wat zorgt voor een beheersbaar vast maandbedrag. Bijvoorbeeld, voor een lening van €7.500 voor een nieuwe keuken betaal je maandelijks slechts €95. Bovendien kan de rente voor leningen ten behoeve van een verbouwing of onderhoud fiscaal aftrekbaar zijn!
+                  </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <DebtConsolidation />
+        <DebtConsolidation />
 
-      <PersonalLoanHowItWorks />
+        <PersonalLoanHowItWorks />
 
-      <AboutSantander />
+        <AboutSantander />
 
-      <PersonalLoanCosts />
+        <PersonalLoanCosts />
 
-      <MoreAboutLoans />
+        <MoreAboutLoans />
 
-      <OtherLoans currentPath="/persoonlijke-lening-voor-grote-uitgaven" />
+        <OtherLoans currentPath="/persoonlijke-lening-voor-grote-uitgaven" />
 
-      <FAQ items={persoonlijkeLeningSFAQ} />
+        <FAQ items={persoonlijkeLeningSFAQ} />
 
       <Footer />
     </div>

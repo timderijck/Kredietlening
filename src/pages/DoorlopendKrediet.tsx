@@ -18,6 +18,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { OtherLoans } from "@/components/OtherLoans";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
+
 const doorlopendKredietSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialProduct",
@@ -79,6 +80,14 @@ const doorlopendKredietFAQ = [
   },
 ];
 
+const ctaButtons = [
+  {
+    text: "Direct Aanvragen",
+    link: "/aanvragen",
+    variant: "cta" as const,
+  },
+];
+
 const DoorlopendKrediet = () => {
   return (
     <div className="min-h-screen">
@@ -94,7 +103,7 @@ const DoorlopendKrediet = () => {
         title="Doorlopend krediet: Flexibiliteit in geldzaken"
         subtitle="Ervaar de vrijheid van een doorlopend krediet. Betaal een laag maandbedrag en alleen rente over het opgenomen bedrag. Beschikbaar van €1.500 tot €10.000."
         backgroundImage="/assets/doorlopend-krediet2.png"
-        moreInfoLink="/minilening-zonder-bkr-aanvragen#providers"
+        ctaButtons={ctaButtons}
       />
 
       <TrustBadges />
@@ -107,10 +116,10 @@ const DoorlopendKrediet = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="mb-4">Over het doorlopend krediet</h2>
-              <p className="text-lg text-muted-foreground">
-              Wanneer je vaker denkt geld nodig te hebben kan een doorlopend krediet uitkomst bieden. Maandelijks betaal je een klein bedrag voor de beschikbare service. Je ontangt de Santander Card thuis waarmee je zowel kunt betalen in winkels als contant geld op kunt nemen.
-              </p>
+                <h2 className="mb-4">Over het doorlopend krediet</h2>
+                <p className="text-lg text-muted-foreground">
+                Wanneer je vaker denkt geld nodig te hebben kan een doorlopend krediet uitkomst bieden. Maandelijks betaal je een klein bedrag voor de beschikbare service. Je ontangt de Santander Card thuis waarmee je zowel kunt betalen in winkels als contant geld op kunt nemen.
+                </p>
             </div>
           </div>
         </div>

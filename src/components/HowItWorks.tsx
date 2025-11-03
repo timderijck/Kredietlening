@@ -36,8 +36,8 @@ export const HowItWorks = () => {
         <div className="text-center mb-12">
           <h2 className="mb-4">Zo werkt het</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            In vier eenvoudige stappen naar je geld
-          </p>
+              In vier eenvoudige stappen naar je geld
+            </p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-8">

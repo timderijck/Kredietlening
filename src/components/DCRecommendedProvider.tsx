@@ -3,12 +3,13 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 export const DCRecommendedProvider = () => {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Onze aanbeveling</h2>
+            <h2 className="mb-4">Onze aanbeveling</h2>
         </div>
         <Card className="max-w-2xl mx-auto border-2 shadow-lg">
           <CardContent className="p-6 flex flex-col md:flex-row items-center justify-between">

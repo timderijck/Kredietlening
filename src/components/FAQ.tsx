@@ -56,8 +56,8 @@ export const FAQ = ({ items = defaultFAQItems }: FAQProps) => {
         <div className="text-center mb-12">
           <h2 className="mb-4">Veelgestelde vragen</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Vind antwoord op de meest gestelde vragen over onze leningen
-          </p>
+              Vind antwoord op de meest gestelde vragen over onze leningen
+            </p>
         </div>
 
         <div className="max-w-3xl mx-auto">

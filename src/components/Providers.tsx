@@ -27,17 +27,19 @@ export const Providers = () => {
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           {providers.map((provider) => (
-            <Card key={provider.name}>
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <img src={provider.logo} alt={provider.name} loading="lazy" className="h-32 mb-4" />
-                <div className="flex items-center text-yellow-500 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className={`h-5 w-5 ${i < provider.rating ? 'fill-current' : ''}`} />
-                  ))}
-                  <span className="ml-2 text-foreground">{provider.rating}/5</span>
+            <Card key={provider.name} className="flex flex-col">
+              <CardContent className="p-6 flex flex-col items-center text-center h-full justify-start">
+                <img src={provider.logo} alt={provider.name} loading="lazy" className={`mb-4 py-8 ${provider.name === 'Saldodipje' ? 'h-40' : 'h-32'}`} />
+                <div className="flex flex-col items-center flex-grow justify-end">
+                  <div className="flex items-center text-yellow-500 mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className={`h-5 w-5 ${i < provider.rating ? 'fill-current' : ''}`} />
+                    ))}
+                    <span className="ml-2 text-foreground">{provider.rating}/5</span>
+                  </div>
+                  <p className="text-muted-foreground mb-4">Binnen {provider.deliveryTime} uur op je rekening</p>
+                  <Button asChild><Link to="/minilening-zonder-bkr-aanvragen">Aanvragen</Link></Button>
                 </div>
-                <p className="text-muted-foreground mb-4">Binnen {provider.deliveryTime} uur op je rekening</p>
-                <Button asChild><Link to="/minilening-zonder-bkr-aanvragen">Aanvragen</Link></Button>
               </CardContent>
             </Card>
           ))}

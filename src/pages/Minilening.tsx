@@ -14,6 +14,7 @@ import { SeoHead } from "@/components/SeoHead";
 import { OtherLoans } from "@/components/OtherLoans";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
+
 const minileningSchema = {
   "@context": "https://schema.org",
   "@type": "FinancialProduct",
@@ -61,6 +62,14 @@ const minileningFAQ = [
   },
 ];
 
+const ctaButtons = [
+  {
+    text: "Direct Aanvragen",
+    link: "/aanvragen",
+    variant: "cta" as const,
+  },
+];
+
 const Minilening = () => {
   return (
     <div className="min-h-screen">
@@ -75,53 +84,53 @@ const Minilening = () => {
         title="Minilening: Snel en eenvoudig tot €1.500 lenen"
         subtitle="De minilening is dé lening voor bedragen vanaf 100 tot 1.500 euro. Het volledige geleende bedrag krijg je in 1 keer op je rekening gestort. Jij bepaalt vervolgens waar je de ontvangen lening voor gaat gebruiken. Een nieuwe Macbook, een vakantie, een wasmachine of misschien wel een nieuwe fiets, de keuze is aan jou!"
         backgroundImage="/assets/lenen-scaled.webp"
-        hideMoreInfoButton={true}
+        ctaButtons={ctaButtons}
       />
-      <TrustBadges />
-      <Providers />
-      <KeyFeatures />
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="mb-4">Over de minilening</h2>
-              <p className="text-lg text-muted-foreground">
-              Met spoed een klein bedrag lenen? Dan kan een minilening de oplossing. De minilening wordt ook wel flitskrediet of microkrediet genoemd. In Nederland zijn er diverse aanbieders van een minilening. De meest bekende aanbieders zijn Ferratum en Saldodipje. De werkwijze en voorwaarden van deze aanbieders zijn identiek. Zo werken beide aanbieders met een looptijd van 30, 45 of 62 dagen. Deze looptijd is afhankelijk van het geleende bedrag. Het terugbetalen van het geleende bedrag gaat eenvoudig en snel via iDeal.
-              </p>
+        <TrustBadges />
+        <Providers />
+        <KeyFeatures />
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                  <h2 className="mb-4">Over de minilening</h2>
+                  <p className="text-lg text-muted-foreground">
+                  Met spoed een klein bedrag lenen? Dan kan een minilening de oplossing. De minilening wordt ook wel flitskrediet of microkrediet genoemd. In Nederland zijn er diverse aanbieders van een minilening. De meest bekende aanbieders zijn Ferratum en Saldodipje. De werkwijze en voorwaarden van deze aanbieders zijn identiek. Zo werken beide aanbieders met een looptijd van 30, 45 of 62 dagen. Deze looptijd is afhankelijk van het geleende bedrag. Het terugbetalen van het geleende bedrag gaat eenvoudig en snel via iDeal.
+                  </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="mb-4">Geen BKR toetsing</h2>
-              <p className="text-lg text-muted-foreground">
-              De minileningen van Ferratum en Saldodipje zijn een van de weinige leningen waar geld lenen zonder BKR toetsing mogelijk is. Met andere woorden: ook met een negatieve BKR registratie is het mogelijk om een minilening te verkrijgen. Dit is mogelijk doordat deze aanbieders geen BKR check uitvoeren.
-              </p>
+        </section>
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                  <h2 className="mb-4">Geen BKR toetsing</h2>
+                  <p className="text-lg text-muted-foreground">
+                  De minileningen van Ferratum en Saldodipje zijn een van de weinige leningen waar geld lenen zonder BKR toetsing mogelijk is. Met andere woorden: ook met een negatieve BKR registratie is het mogelijk om een minilening te verkrijgen. Dit is mogelijk doordat deze aanbieders geen BKR check uitvoeren.
+                  </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      <ProsAndCons />
-      <Usage />
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Card>
-              <CardContent className="p-6">
-                <p className="text-lg text-muted-foreground italic">"Vanwege mijn scheiding had ik op dat moment niet het geld om met mijn nieuwe partner op vakantie te gaan. Dankzij een minilening via Ferratum kon ik toch genieten van een heerlijke vakantie. Top!!!"</p>
-                <p className="text-right font-semibold mt-4">- Anna de Jonghe</p>
-              </CardContent>
-            </Card>
+        </section>
+        <ProsAndCons />
+        <Usage />
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+                <Card>
+                  <CardContent className="p-6">
+                    <p className="text-lg text-muted-foreground italic">"Vanwege mijn scheiding had ik op dat moment niet het geld om met mijn nieuwe partner op vakantie te gaan. Dankzij een minilening via Ferratum kon ik toch genieten van een heerlijke vakantie. Top!!!"</p>
+                    <p className="text-right font-semibold mt-4">- Anna de Jonghe</p>
+                  </CardContent>
+                </Card>
+            </div>
           </div>
-        </div>
-      </section>
-      <TrustAndReview />
-      <MinileningCosts />
-      <OtherLoans currentPath="/minilening-zonder-bkr-aanvragen" />
-      <FAQ items={minileningFAQ} />
+        </section>
+        <TrustAndReview />
+        <MinileningCosts />
+        <OtherLoans currentPath="/minilening-zonder-bkr-aanvragen" />
+        <FAQ items={minileningFAQ} />
       <Footer />
     </div>
   );

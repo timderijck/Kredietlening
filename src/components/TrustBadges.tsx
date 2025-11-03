@@ -32,9 +32,7 @@ export const TrustBadges = () => {
             const Icon = badge.icon;
             return (
               <div
-                key={index}
                 className="flex flex-col items-center text-center animate-scale-in"
-                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="mb-3 p-3 rounded-full bg-primary/10">
                   <Icon className="h-6 w-6 text-primary" />

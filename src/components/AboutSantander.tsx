@@ -8,9 +8,9 @@ export const AboutSantander = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="mb-4">Over Santander</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Santander is een wereldwijde financiële gigant met meer dan 125 miljoen klanten. 
-            Ze zijn ook bekend als sponsor van de Formule 1.
-          </p>
+              Santander is een wereldwijde financiële gigant met meer dan 125 miljoen klanten. 
+              Ze zijn ook bekend als sponsor van de Formule 1.
+            </p>
           <Card className="inline-block p-6 border-2 shadow-lg">
             <CardContent className="p-0 flex items-center gap-4">
               <Users className="h-10 w-10 text-primary" />

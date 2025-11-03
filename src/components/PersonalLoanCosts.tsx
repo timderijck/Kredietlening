@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 
+
 const loanCosts = [
   { amount: "€ 2.500", monthly: "€ 48", interest: "11,9%", duration: "72 maanden", total: "€ 3.454" },
   { amount: "€ 5.000", monthly: "€ 65", interest: "9,9%", duration: "120 maanden", total: "€ 7.757" },
@@ -14,7 +15,7 @@ export const PersonalLoanCosts = () => {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Wat zijn de kosten van een persoonlijke lening?</h2>
+            <h2 className="mb-4">Wat zijn de kosten van een persoonlijke lening?</h2>
         </div>
         <Card>
           <CardContent>

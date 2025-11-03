@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 
+
 export const MoreAboutLoans = () => {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Meer over lenen</h2>
+            <h2 className="mb-4">Meer over lenen</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <Card>

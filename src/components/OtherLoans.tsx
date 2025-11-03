@@ -47,33 +47,35 @@ export const OtherLoans = ({ currentPath }: OtherLoansProps) => {
     <section className="py-16 md:py-24 bg-muted/40">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Toch niet wat je zoekt?</h2>
+          <h2 className="mb-4 text-foreground">Toch niet wat je zoekt?</h2>
           <p className="text-lg text-muted-foreground">
-            Bekijk onze andere leenmogelijkheden.
-          </p>
+              Bekijk onze andere leenmogelijkheden.
+            </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {otherLoans.map((loan) => (
             <Card key={loan.path} className="flex flex-col relative overflow-hidden group">
               {/* Background Image & Overlay */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
+                className="absolute inset-0 bg-cover bg-no-repeat bg-center"
                 style={{ backgroundImage: `url(${loan.backgroundImage})` }}
-              />
-              <div className="absolute inset-0 bg-white/90 dark:bg-black/80" />
+              ></div>
+              <div className="absolute inset-0 bg-black/40" />
+
+              {/* Content */}
 
               {/* Content */}
               <div className="relative z-10 flex flex-col h-full">
                 <CardHeader>
-                  <CardTitle>{loan.title}</CardTitle>
-                  <CardDescription className="text-foreground/80">{loan.description}</CardDescription>
+                  <CardTitle className="text-white">{loan.title}</CardTitle>
+                  <CardDescription className="text-white">{loan.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="space-y-3">
                     {loan.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
-                        <feature.icon className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-primary" />
-                        <span className="text-sm text-foreground/90">{feature.text}</span>
+                        <feature.icon className="h-5 w-5 mr-3 mt-0.5 flex-shrink-0 text-white" />
+                        <span className="text-sm text-white">{feature.text}</span>
                       </li>
                     ))}
                   </ul>

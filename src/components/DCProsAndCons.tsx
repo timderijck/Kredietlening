@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Check, X } from "lucide-react";
 
+
 const pros = [
   "Flexibel krediet",
   "Laag basis bedrag per maand",
@@ -23,7 +24,7 @@ export const DCProsAndCons = () => {
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Voor- en nadelen van een doorlopend krediet</h2>
+            <h2 className="mb-4">Voor- en nadelen van een doorlopend krediet</h2>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="border-green-500 shadow-lg">
