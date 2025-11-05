@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
             {/* Brand */}
             <div className="md:text-left text-center">
-              <h3 className="text-2xl font-bold mb-4">Kredietlening</h3>
+              <h3 className="text-2xl font-bold mb-4">Finlening</h3>
               <p className="text-primary-foreground/80 text-sm">
                 Snel en betrouwbaar geld lenen sinds 2005. Uw financiële partner in onverwachte situaties.
               </p>
@@ -48,7 +48,7 @@ export const Footer = () => {
                 </li>
                 <li className="flex items-center gap-2 text-primary-foreground/80 justify-center md:justify-end">
                   <Mail size={16} />
-                  <span>info@kredietlening.nl</span>
+                  <span>info@finlening.nl</span>
                 </li>
               </ul>
             </div>
@@ -56,7 +56,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-primary-foreground/20">
           <div className="text-center text-sm text-primary-foreground/70">
-            <p>© {currentYear} Kredietlening. Alle rechten voorbehouden.</p>
+            <p>© {currentYear} Finlening. Alle rechten voorbehouden.</p>
             <p className="mt-2">
               Let op: Geld lenen kost geld. Leen daarom nooit meer dan nodig en niet voor langere tijd dan noodzakelijk.
             </p>

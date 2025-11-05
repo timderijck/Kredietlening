@@ -10,8 +10,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <SeoHead 
-        title="Contact | Kredietlening.nl - Neem Contact Op"
-        description="Heeft u vragen over leningen of onze vergelijkingsdienst? Neem contact op met Kredietlening.nl via telefoon, e-mail of ons contactformulier."
+        title="Contact | Finlening.nl - Neem Contact Op"
+        description="Heeft u vragen over leningen of onze vergelijkingsdienst? Neem contact op met Finlening.nl via telefoon, e-mail of ons contactformulier."
       />
       <Navigation />
       <BreadcrumbNav pageTitle="Contact" />
@@ -29,7 +29,7 @@ const Contact = () => {
                 <div>
                     <h2 className="text-2xl font-semibold mb-4">Contactgegevens</h2>
                     <div className="bg-card p-6 rounded-lg shadow-md mb-6">
-                        <p className="mb-1">📧 E-mail: info@kredietlening.nl</p>
+                        <p className="mb-1">📧 E-mail: info@finlening.nl</p>
                         <p className="mb-1">📍 Adres: Voorbeeldstraat 123, 1234 AB Voorbeeldstad</p>
                         <p className="mb-1">📞 Telefoon: 088 - 123 4567</p>
                     </div>

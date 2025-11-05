@@ -31,7 +31,7 @@ const minileningSchema = {
   },
   "provider": {
     "@type": "Organization",
-    "name": "Kredietlening"
+    "name": "Finlening"
   }
 };
 
@@ -75,7 +75,7 @@ const Minilening = () => {
     <div className="min-h-screen">
       <SeoHead 
         title="Minilening aanvragen | Snel €100 - €1.500 lenen zonder BKR"
-        description="Snel geld nodig? Vraag een minilening aan bij Kredietlening. Leen €100-€1.500 zonder BKR toetsing. Binnen 24 uur geld op je rekening. Ook met negatieve BKR registratie."
+        description="Snel geld nodig? Vraag een minilening aan bij Finlening. Leen €100-€1.500 zonder BKR toetsing. Binnen 24 uur geld op je rekening. Ook met negatieve BKR registratie."
         schema={minileningSchema}
       />
       <Navigation />

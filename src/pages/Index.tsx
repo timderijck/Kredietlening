@@ -12,23 +12,23 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 const indexSchema = [
   {
     "@context": "https://schema.org",
-    "url": "https://kredietlening.nl",
+    "url": "https://finlening.nl",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://kredietlening.nl/search?q={search_term_string}",
+      "target": "https://finlening.nl/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   },
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Kredietlening",
-    "url": "https://kredietlening.nl",
+    "name": "Finlening",
+    "url": "https://finlening.nl",
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": "+31-88-123-4567", // Telefoonnummer uit de footer
       "contactType": "customer service",
-      "email": "info@kredietlening.nl" // E-mailadres uit de footer
+      "email": "info@finlening.nl" // E-mailadres uit de footer
     }
   }
 ];

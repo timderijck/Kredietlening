@@ -10,8 +10,8 @@ const Privacy = () => {
   return (
     <div className="min-h-screen">
       <SeoHead 
-        title="Privacy & Cookiebeleid - Kredietlening.nl"
-        description="Lees het privacy- en cookiebeleid van Kredietlening.nl en onze affiliate disclaimer. Wij hechten veel waarde aan uw privacy."
+        title="Privacy & Cookiebeleid - Finlening.nl"
+        description="Lees het privacy- en cookiebeleid van Finlening.nl en onze affiliate disclaimer. Wij hechten veel waarde aan uw privacy."
       />
       <Navigation />
       <BreadcrumbNav pageTitle="Privacy & Cookies" />
@@ -30,7 +30,7 @@ const Privacy = () => {
 
                               <h1 className="text-3xl font-bold mb-4">Privacy- en cookiebeleid</h1>
 
-                              <p className="mb-4">Wij hechten veel waarde aan de bescherming van jouw persoonsgegevens. Kredietlening verwerkt jouw gegevens uitsluitend om onze diensten te verbeteren en contact te onderhouden.</p>
+                              <p className="mb-4">Wij hechten veel waarde aan de bescherming van jouw persoonsgegevens. Finlening verwerkt jouw gegevens uitsluitend om onze diensten te verbeteren en contact te onderhouden.</p>
 
                               <p className="mb-4">Je gegevens worden nooit verkocht aan derden.</p>
 

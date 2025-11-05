@@ -10,20 +10,20 @@ const OverOns = () => {
   return (
     <div className="min-h-screen">
       <SeoHead 
-        title="Over Ons | Kredietlening.nl - Uw Onafhankelijke Vergelijkingsplatform"
-        description="Leer meer over Kredietlening.nl, uw betrouwbare partner voor het vergelijken van leningen. Wij zijn onafhankelijk en helpen u de beste lening te vinden."
+        title="Over Ons | Finlening.nl - Uw Onafhankelijke Vergelijkingsplatform"
+        description="Leer meer over Finlening.nl, uw betrouwbare partner voor het vergelijken van leningen. Wij zijn onafhankelijk en helpen u de beste lening te vinden."
       />
       <Navigation />
       <BreadcrumbNav pageTitle="Over Ons" />
       <Hero 
-        title="Over ons – Kredietlening"
-        subtitle="Bij Kredietlening geloven we in transparantie, kwaliteit en betrouwbaarheid."
+        title="Over ons – Finlening"
+        subtitle="Bij Finlening geloven we in transparantie, kwaliteit en betrouwbaarheid."
         backgroundImage="/assets/hero-bg.jpg"
       />
 
       <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
-            <h1 className="text-3xl font-bold mb-8 text-center">Over ons – Kredietlening</h1>
+            <h1 className="text-3xl font-bold mb-8 text-center">Over ons – Finlening</h1>
             <div className="grid md:grid-cols-2 gap-8 items-start">
                 <div>
                     <h2 className="text-2xl font-semibold mb-4">Onze Missie</h2>

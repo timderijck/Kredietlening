@@ -35,7 +35,7 @@ const persoonlijkeLeningSchema = {
   },
   "provider": {
     "@type": "Organization",
-    "name": "Kredietlening"
+    "name": "Finlening"
   }
 };
 
@@ -97,7 +97,7 @@ const PersoonlijkeLening = () => {
     <div className="min-h-screen">
       <SeoHead 
         title="Persoonlijke lening aanvragen | Leen tot €50.000 voor jouw droom"
-        description="Realiseer je plannen met een persoonlijke lening van Kredietlening. Leen tot €50.000 met vaste rente en looptijd. Eenvoudig aanvragen en snel geld op je rekening."
+        description="Realiseer je plannen met een persoonlijke lening van Finlening. Leen tot €50.000 met vaste rente en looptijd. Eenvoudig aanvragen en snel geld op je rekening."
         schema={persoonlijkeLeningSchema}
       />
       <Navigation />

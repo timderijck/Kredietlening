@@ -117,16 +117,16 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary">Kredietlening</span>
+            <span className="text-2xl font-bold text-primary">Finlening</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <NavigationMenu className="hidden md:flex">
+          <NavigationMenu className="hidden lg:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Leningen</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] ">
                     {leningen.map((lening) => (
                       <ListItem
                         key={lening.title}
@@ -142,7 +142,7 @@ export const Navigation = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Kredietverstrekkers</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] ">
                     {kredietverstrekkers.map((kredietverstrekker) => (
                       <ListItem
                         key={kredietverstrekker.title}
@@ -158,7 +158,7 @@ export const Navigation = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>Info</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] lg:w-[600px] ">
                     {info.map((infoItem) => (
                       <ListItem
                         key={infoItem.title}
@@ -176,7 +176,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-md hover:bg-muted"
+            className="lg:hidden p-2 rounded-md hover:bg-muted"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -185,13 +185,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 space-y-4 animate-slide-in">
+          <div className="lg:hidden py-4 space-y-4 animate-slide-in">
             <div>
               <h4 className="text-lg font-semibold mb-2">Leningen</h4>
               <div className="flex flex-row flex-wrap gap-2">
                 {leningen.map((link) => (
                   <Link
-                    key={link.path}
+                    key={link.title}
                     to={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`inline-block px-4 py-2 rounded-md text-base font-medium transition-colors ${
@@ -211,7 +211,7 @@ export const Navigation = () => {
               <div className="flex flex-row flex-wrap gap-2">
                 {kredietverstrekkers.map((link) => (
                   <Link
-                    key={link.path}
+                    key={link.title}
                     to={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`inline-block px-4 py-2 rounded-md text-base font-medium transition-colors ${
@@ -231,7 +231,7 @@ export const Navigation = () => {
               <div className="flex flex-row flex-wrap gap-2">
                 {info.map((link) => (
                   <Link
-                    key={link.path}
+                    key={link.title}
                     to={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`inline-block px-4 py-2 rounded-md text-base font-medium transition-colors ${

@@ -16,6 +16,7 @@ import OverOns from "./pages/OverOns";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 import VerschilPersoonlijkeLeningDoorlopendKrediet from "./pages/blog/VerschilPersoonlijkeLeningDoorlopendKrediet";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/blog/verschil-persoonlijke-lening-doorlopend-krediet" element={<VerschilPersoonlijkeLeningDoorlopendKrediet />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

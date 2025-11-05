@@ -35,7 +35,7 @@ const doorlopendKredietSchema = {
   },
   "provider": {
     "@type": "Organization",
-    "name": "Kredietlening"
+    "name": "Finlening"
   }
 };
 
@@ -93,7 +93,7 @@ const DoorlopendKrediet = () => {
     <div className="min-h-screen">
       <SeoHead 
         title="Doorlopend krediet aanvragen | Flexibel geld lenen tot €10.000"
-        description="Ervaar de vrijheid van een doorlopend krediet bij Kredietlening. Leen tot €10.000, betaal alleen rente over opgenomen bedrag. Flexibel opnemen en boetevrij aflossen."
+        description="Ervaar de vrijheid van een doorlopend krediet bij Finlening. Leen tot €10.000, betaal alleen rente over opgenomen bedrag. Flexibel opnemen en boetevrij aflossen."
         schema={doorlopendKredietSchema}
       />
       <Navigation />

@@ -34,9 +34,9 @@ export const BenefitCards = ({ benefits = defaultBenefits }: BenefitCardsProps) 
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Waarom Kredietlening?</h2>
+          <h2 className="mb-4">Waarom Finlening?</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Snel, simpel en betrouwbaar. Ontdek de voordelen van lenen bij Kredietlening.
+              Snel, simpel en betrouwbaar. Ontdek de voordelen van lenen bij Finlening.
             </p>
         </div>
         

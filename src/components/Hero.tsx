@@ -33,11 +33,11 @@ export const Hero = ({ title, subtitle, backgroundImage, ctaButtons, backgroundC
 
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 py-20 md:py-32">
-        <div className="max-w-4xl mx-auto text-center text-primary-foreground animate-fade-in">
-          <h1 className="mb-6 leading-tight text-primary"> 
+        <div className="max-w-4xl mx-auto text-center text-white animate-fade-in">
+          <h1 className="mb-6 leading-tight"> 
               {title}
             </h1>
-          <p className="text-xl md:text-2xl mb-8 text-primary-foreground max-w-2xl mx-auto">
+          <p className="text-xl md:text-2xl mb-8 text-white/90 max-w-2xl mx-auto">
               {subtitle}
             </p>
           {ctaButtons && ctaButtons.length > 0 && (
